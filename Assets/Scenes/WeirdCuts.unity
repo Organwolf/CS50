@@ -431,6 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 3614649369667741842, guid: 962b962e6aa38a9409236ea22124524c,
     type: 3}
+  arCamera: {fileID: 1107065693}
 --- !u!114 &1832783690
 MonoBehaviour:
   m_ObjectHideFlags: 0
