@@ -1,5 +1,7 @@
 ﻿// WEIRD CUTS
 
+// - consider using FixedUpdate instead of update for the TouchPhase.Move etc
+
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 // Can't create objects while over UI 
@@ -37,6 +39,8 @@ public class PlacementManager : MonoBehaviour
 
             else if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
+                // Create a move delta to check against
+                // Only move the object if the move delta is big enough
                 // In Weird Cuts TouchPhase.Moved is used to rotate and scale the object
                 // Left and Right swipes = Rotation
                 // Up and Down swipes = Increase/Decrease scale
